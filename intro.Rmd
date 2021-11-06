@@ -1,0 +1,18 @@
+---
+title: "Welcome to my website!"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Who am I?
+
+Hello! I'm Hao Zheng, a little Chinese girl who currently as a graduate student in Columbia University, majoring in Biostatistics. 
+
+## Something about me
+
+Really enjoy singing, playing the guitar, some mysterious novels, psycology, traveling and good food!
+
+## What's this website for
+This website will be some of my information (maybe also some interesting things in my life~), welcome again to my world!
