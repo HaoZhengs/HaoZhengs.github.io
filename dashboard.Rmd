@@ -16,6 +16,18 @@ library(plotly)
 data("instacart")
 ```
 
+```{r}
+instacart = 
+  instacart %>% 
+  mutate(
+    day = order_dow +1,
+    day_of_week = lubridate::wday(day, label = TRUE, locale = "English_United States")
+    ) %>%
+  select(order_id, product_id, order_number, day_of_week, order_hour_of_day, product_name, aisle, department) %>% 
+  drop_na() 
+```
+
+
 Column {data-width=600}
 -----------------------------------------------------------------------
 
@@ -39,7 +51,7 @@ Column {data-width=400}
 instacart %>% 
   sample_n(4000) %>% 
   plot_ly(
-    x = ~order_dow, y = ~order_number, type = "box", colors = "viridis"
+    y = ~order_number, color = ~day_of_week, type = "box", colors = "viridis"
   )%>% 
   layout(title = "Order number distribution during the week")
 ```
@@ -53,7 +65,7 @@ instacart %>%
   filter(num_order > 20000) %>% 
   mutate(aisle = reorder(aisle, num_order)) %>% 
   plot_ly(
-    x = ~aisle, y = ~num_order, type = "bar", colors = "viridis"
+    x = ~aisle, y = ~num_order, color = ~aisle, type = "bar", colors = "viridis"
   ) %>% 
   layout(title = "Number of orders of different aisles")
 ```
