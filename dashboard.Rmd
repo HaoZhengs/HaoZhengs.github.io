@@ -22,13 +22,10 @@ Column {data-width=600}
 ### Chart A
 
 ```{r}
-instacart %>% 
-  group_by(aisle) %>% 
-  summarise(n_obs = n()) %>% 
-  filter(n_obs > 20000) %>% 
-  arrange(n_obs) %>% 
+instacart %>%
+  count(order_dow, department) %>%
   plot_ly(
-    x = ~reorder(aisle, -n_obs), y = ~n_obs, type = "bar", colors = "viridis"
+    x = ~order_dow, y = ~n, type = "scatter", mode = "lines", color = ~department, colors = "viridis"
   )
 ```
 
@@ -38,12 +35,6 @@ Column {data-width=400}
 ### Chart B
 
 ```{r}
-# instacart %>% 
-#   count(order_hour_of_day,department) %>% 
-#   plot_ly(
-#     x = ~order_hour_of_day, y = ~n, type = "scatter", mode = 'lines', color = ~department, colors = "viridis"
-#   )
-
 instacart %>% 
   sample_n(4000) %>% 
   plot_ly(
@@ -54,6 +45,13 @@ instacart %>%
 ### Chart C
 
 ```{r}
-
+instacart %>% 
+  group_by(aisle) %>% 
+  summarise(n_obs = n()) %>% 
+  filter(n_obs > 20000) %>% 
+  arrange(n_obs) %>% 
+  plot_ly(
+    x = ~reorder(aisle, -n_obs), y = ~n_obs, type = "bar", colors = "viridis"
+  )
 ```
 

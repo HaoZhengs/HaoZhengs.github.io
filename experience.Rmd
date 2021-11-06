@@ -5,6 +5,8 @@ output:
     toc: true
     toc_float: true
 ---
+<img src="images/liverpool.jpg" style="width:50%">
+
 ### Education Background
 - **Columbia University**, United States
   09/2021 – 05/2023

@@ -6,7 +6,7 @@ navbar:
     - text: "Experience"
       href: experience.html
     - text: "Plotly"
-      href: experience.html
+      href: plotly.html
     - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg

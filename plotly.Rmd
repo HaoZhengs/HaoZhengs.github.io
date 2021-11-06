@@ -26,7 +26,29 @@ instacart =
 ```
 
 
-First, what aisles are popular? let's compare number of orders from different aisles by making a bar plot.
+First, we can check the number of orders for different deparment during the week. 
+
+```{r}
+instacart %>%
+  count(order_dow, department) %>%
+  plot_ly(
+    x = ~order_dow, y = ~n, type = "scatter", mode = "lines", color = ~department, colors = "viridis"
+  )
+```
+
+
+Next, we can check the boxplot of the distributions of order_number during a day.
+```{r}
+instacart %>% 
+  sample_n(4000) %>% 
+  plot_ly(
+    x = ~order_hour_of_day, y = ~order_number, type = "box", colors = "viridis"
+  )
+  
+```
+
+
+At last, what aisles are popular? let's compare number of orders from different aisles by making a bar plot.
 
 ```{r}
 instacart %>% 
@@ -38,15 +60,3 @@ instacart %>%
     x = ~reorder(aisle, -n_obs), y = ~n_obs, type = "bar", colors = "viridis"
   )
 ```
-
-
-Next, we can check the boxplot of order numbers during a day.
-```{r}
-instacart %>% 
-  sample_n(4000) %>% 
-  plot_ly(
-    x = ~order_hour_of_day, y = ~order_number, type = "box", colors = "viridis"
-  )
-  
-```
-
