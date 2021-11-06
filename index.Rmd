@@ -7,6 +7,7 @@ output:
 ---
 
 ## Who am I
+<img src="images/photo.jpg" style="width:50%">
 
 Hello! I'm Hao Zheng, a little Chinese girl who currently as a graduate student in Columbia University, majoring in Biostatistics. 
 
