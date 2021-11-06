@@ -5,3 +5,95 @@ output:
     toc: true
     toc_float: true
 ---
+### Education Background
+- **Columbia University**, United States
+  09/2021 – 05/2023
+  *MS in Biostatistics*
+
+- **University of Liverpool (UoL)**, United Kingdom
+  09/2019 – 07/2021
+  *BSc in Applied Mathematics* | Cum GPA: 3.72/4.0
+  
+- **Xi’an Jiaotong-Liverpool University (XJTLU)**, China
+  09/2017 – 06/2019
+  *BSc in Applied Mathematics* | 2017-18 XJTLU Academic Excellence Award (5%)
+- Core Courses: Metric Spaces / Advanced Linear Algebra / Multivariable Calculus / Analysis 1&2 / Differential Equations / Complex Functions / Numerical Methods / Probability and Statistics / Applied Stochastic Models / Linear Statistical Models / Programming in Java / Dynamic Modelling / Operational Research: Probabilistic Models / Network in Theory & Practice / Medical Statistics / Stochastic Theory & Methods in Data Science / Epidemiology / Biostatistical Methods / Data Science
+
+### Skills
+- **Programming Languages / Software**: Python | R | MySQL | PowerBI | Java | Maple | MATLAB | SPSS | MS Office | Latex
+- **Libraries**: NumPy | SciPy | Pandas | PyTorch | Keras | TensorFlow | Matplotlib | Seaborn | python crawler
+- **Hobbies**: Guitar | Japanese | Mystery Novel | Music | Watercolor Painting | Bullet Journal
+
+### Internship experiences
+- **Data Analyst Intern** | *Wunderman Thompson*, Shanghai, China, 06/2021–08/2021
+  - Used PowerBI to help visualize the performance data for NIKE WMP platform, a platform which labels the customer when they access NIKE’s WeChat official account. Presented the results for WMP platform using PowerPoint.
+  - Used MySQL and Excel to select and produce chart for customer desired information.
+  - Produced Word clouds to illustrate the information provided by Sina Public Opinion monitoring application, commented and offered further opinions on the product or brand.
+
+- **Data Analyst Intern** | *Ant Financial (the World's Largest Fintech Unicorn)*, Hangzhou, China, 07/2020 – 09/2020
+  - Joined a team to analyze the characteristics of foreigners' transactions on Alipay, find out the significant, distinguishable, and predictive features, and writes scripts for online policy calls so as to improve the ability of Alipay risk control engine to identify and cover black incidents
+  - Used MySQL to complete the driver table and mark black and white events
+  - Associated the driver table with the device information table and the member information table and marked statistics of cases
+  - Analyzed characteristics of 20+ devices and assessed the differentiate ability (woe and IV values were calculated)
+  - Complete simple js scripts with relevant features for online policy invocation (covering device language version, expense account and environment, high-risk recharge time period, binding the phone country and device language, and whether the input account is an international account, etc.)
+  - Mastered the model strategy, AB Testing, AARRR funnel model and Swap Set analysis
+
+
+### Research experiences
+- **Team Member** | *Robust Indoor Localization Based on Deep Neural Network (DNN), Summer Undergraduate Research Fellowship*, XJTLU, Advisor: Prof. K. Kim
+  - 06/2019 – 09/2019
+  - Analyzed and improved an existing multivariate dataset for DNN indoor localization, focusing on sensitivity evaluation and predictive accuracy improvement. 
+  - Built a workflow for indoor localization based on Wi-Fi received signal strength (RSS) and geomagnetic field data, covering dimension reduction of input data using autoencoder (AE), and location estimation using convolutional neural network (CNN) and multilayer perceptron (MLP) methods; leveraged Python and PyTorch to implement the model. 
+  - Systematically trained, validated, and compared the performance of CNN and MLP models.
+
+
+### Course projects
+- **A Data-Driven Study on Leading Factors Underlying Drug Use** | *Stochastic Theory & Methods in Data Science Course Project*, UoL， 10/2020 – 11/2020
+  - Completed an empirical study to identify the key factors driving the drug use:
+  - Leveraged an array of feature engineering techniques, including 1) using random forest regressor to fill the missing values, 2) visually analyzing the correlation between features and labels using hotmap, 3) segmenting raw data to establish new features, and 4) clustering data features to create new features.
+  - Conducted exploratory data analysis by building, training and validating SVM, random forest, decision trees, and neural network models, followed by 1) cross-validation to test individual models, and 2) Bayesian optimization to tune and optimize model parameters.
+  - Utilized ensemble, blending and stacking algorithms in Python to fuse single models for improved prediction accuracy.
+
+- **Discrete-Time Age-Structured Population Model** | *Dynamics Modeling Course Project*, XJTLU, 03/2019 - 04/2018 
+  - Built a discrete-time matrix model in Maple to characterize the animal population dynamics while splitting the populations by sex and age class; leveraged the numerical model to study
+  - Birth-flow and birth-pulse reproduction patterns, covering both deterministic and stochastic environments.
+  - Competing risks generated by mortality and harvest on the model parameters.
+  - Stability characteristics of an age-structured population with migration based on a Markov transition matrix.
+  - Conditions leading to steady population and age structures, allowing the proposal of strategies for controlling immigration.  
+
+- **Development of a Garden Planning Application** | *Introduction to Java Programming Course Project*, XJTLU, 11/2018 
+  - Designed, implemented and tested in Java an interactive application for assisting in garden design so as to create a balance of flow and drama:
+  - Gained familiarity with the workflow for developing a commercial software product, spanning user requirement solicitation, architecture design, programmatic implementation, testing, and deployment. 
+  - Followed object-orient design patterns to design the software, focusing on modularity, extensibility, robustness, and maintainability.
+  - Leveraged JFrame to build the frontend GUI, and various advanced features in Java to facilitate development; promoted team collaboration and version control using GitHub; completed a systematic software testing to verify the functionality of individual components and overall performance.
+
+
+### Extracurricular experiences
+- **Team Leader** | *The Interdisciplinary Contest in Modeling*, 02/2020 – 03/2020
+  - Joined a team of three to predict and maximize Huskies football team’s performance, garnering the Meritorious Winner Award (Top 6.69%):
+  - Built a network model to describe he ball passing process, allowing the mathematical representation of team collaboration from microscopic and macroscopic perspectives. 
+  - Built, trained and validated a neural network (NN) performance model to evaluate the teamwork based on a set of performance indicators.
+  - Built a Markov decision process (MDP) model with states and actions (pass, duel, foul, shot) defined to determine the optimal policy associated a simulated soccer match.
+  - Integrated NN performance model and MDP model to evaluate the universal applicability of the newly established optimal strategy.
+
+- **Team Leader** | *Mathematical Contest in Modeling*, 02/2019 
+  - Led a team of three to build a mathematical model for analyzing the pattern of opioids spread in ﬁve American states: 
+  - Analyzed the relationship between opioid addiction and socioeconomic factors via lasso and stepwise regressions. 
+  - Built a graph network to simulate the drug spreading in discrete time domain; combined exploratory factor analysis with random forest to cluster socio-economic data and identify high-priority areas for crime control.  
+  - Built a differential model with four independent factors to predict the crime rate trend.
+  - Proposed a strategy to mitigate the abuse of opioid, and defined a metric to evaluate the effectiveness.   
+  - Leveraged various geospatial data visualization techniques to facilitate pattern extraction and result presentation.    
+
+- **Member** | *Modeling Department of XJTLU Math Club*, 03/2018 – 06/2019 
+  - Coordinated an array of on-campus activities to promote the development of mathematical modeling skill, such as attending domestic and international mathematical contests in modeling, weekly seminars, meeting with external speakers, etc.    
+
+- **Volunteer** | *AIESEC*, Romania, 06/2018 – 07/2018
+  - Attended a 6-week volunteer teaching event in the city of Cluj-Napoca at Romania; provided caring and support to kids with autism or Down syndrome; served as a literacy tutor to help kids read and write; organized a series of events to promote social awareness of kids with disability.  
+
+- **Team Leader** | *L'Oréal 2019 Brandstorm Business Competition*, 03/2019
+  - Analyzed the marketing strategy for a skin-care product and was awarded as Top 200 Team. key steps included:
+  - Applied SWOT (strengths, weaknesses, opportunities, and threats) model to assess the product’s market competitiveness. 
+  - Performed target market segmentation, followed by an analysis on marketing, behavioral, and mental objectives based on data collected from a self-designed online survey. 
+  - Orally presented the analysis report to a large group of audience; team’s logical rigor, business vision, professional knowledge, teamwork spirit, and presentation skill recognized with an award. 
+
+
