@@ -23,10 +23,11 @@ Column {data-width=600}
 
 ```{r}
 instacart %>%
-  count(order_dow, department) %>%
+  count(order_hour_of_day, department) %>%
   plot_ly(
-    x = ~order_dow, y = ~n, type = "scatter", mode = "lines", color = ~department, colors = "viridis"
-  )
+    x = ~order_hour_of_day, y = ~n, type = "scatter", mode = "lines", color = ~department, colors = "viridis"
+  )%>% 
+  layout(title = "Number of Orders during the day")
 ```
 
 Column {data-width=400}
@@ -38,8 +39,9 @@ Column {data-width=400}
 instacart %>% 
   sample_n(4000) %>% 
   plot_ly(
-    x = ~order_hour_of_day, y = ~order_number, type = "box", colors = "viridis"
-  )
+    x = ~order_dow, y = ~order_number, type = "box", colors = "viridis"
+  )%>% 
+  layout(title = "Order number distribution during the week")
 ```
 
 ### Chart C
@@ -47,11 +49,12 @@ instacart %>%
 ```{r}
 instacart %>% 
   group_by(aisle) %>% 
-  summarise(n_obs = n()) %>% 
-  filter(n_obs > 20000) %>% 
-  arrange(n_obs) %>% 
+  summarise(num_order = n()) %>% 
+  filter(num_order > 20000) %>% 
+  mutate(aisle = reorder(aisle, num_order)) %>% 
   plot_ly(
-    x = ~reorder(aisle, -n_obs), y = ~n_obs, type = "bar", colors = "viridis"
-  )
+    x = ~aisle, y = ~num_order, type = "bar", colors = "viridis"
+  ) %>% 
+  layout(title = "Number of orders of different aisles")
 ```
 
