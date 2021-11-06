@@ -40,8 +40,7 @@ output:
 
 
 ### Research experiences
-- **Team Member** | *Robust Indoor Localization Based on Deep Neural Network (DNN), Summer Undergraduate Research Fellowship*, XJTLU, Advisor: Prof. K. Kim
-  - 06/2019 – 09/2019
+- **Team Member** | *Robust Indoor Localization Based on Deep Neural Network (DNN), Summer Undergraduate Research Fellowship*, XJTLU, Advisor: Prof. K. Kim, 06/2019 – 09/2019
   - Analyzed and improved an existing multivariate dataset for DNN indoor localization, focusing on sensitivity evaluation and predictive accuracy improvement. 
   - Built a workflow for indoor localization based on Wi-Fi received signal strength (RSS) and geomagnetic field data, covering dimension reduction of input data using autoencoder (AE), and location estimation using convolutional neural network (CNN) and multilayer perceptron (MLP) methods; leveraged Python and PyTorch to implement the model. 
   - Systematically trained, validated, and compared the performance of CNN and MLP models.

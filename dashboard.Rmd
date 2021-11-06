@@ -9,24 +9,46 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+data("instacart")
 ```
 
-Column {data-width=650}
+Column {data-width=600}
 -----------------------------------------------------------------------
 
 ### Chart A
 
 ```{r}
-
+instacart %>% 
+  group_by(aisle) %>% 
+  summarise(n_obs = n()) %>% 
+  filter(n_obs > 20000) %>% 
+  arrange(n_obs) %>% 
+  plot_ly(
+    x = ~reorder(aisle, -n_obs), y = ~n_obs, type = "bar", colors = "viridis"
+  )
 ```
 
-Column {data-width=350}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 ### Chart B
 
 ```{r}
+# instacart %>% 
+#   count(order_hour_of_day,department) %>% 
+#   plot_ly(
+#     x = ~order_hour_of_day, y = ~n, type = "scatter", mode = 'lines', color = ~department, colors = "viridis"
+#   )
 
+instacart %>% 
+  sample_n(4000) %>% 
+  plot_ly(
+    x = ~order_hour_of_day, y = ~order_number, type = "box", colors = "viridis"
+  )
 ```
 
 ### Chart C

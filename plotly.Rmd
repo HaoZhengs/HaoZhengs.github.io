@@ -1,0 +1,52 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+This page is for Plotly.
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+
+Here, I chose the instacart data.
+
+```{r}
+instacart = 
+  instacart %>% 
+  select(order_id, product_id, order_number, order_dow, order_hour_of_day, product_name, aisle, department) %>% 
+  drop_na() 
+```
+
+
+First, what aisles are popular? let's compare number of orders from different aisles by making a bar plot.
+
+```{r}
+instacart %>% 
+  group_by(aisle) %>% 
+  summarise(n_obs = n()) %>% 
+  filter(n_obs > 20000) %>% 
+  arrange(n_obs) %>% 
+  plot_ly(
+    x = ~reorder(aisle, -n_obs), y = ~n_obs, type = "bar", colors = "viridis"
+  )
+```
+
+
+Next, we can check the boxplot of order numbers during a day.
+```{r}
+instacart %>% 
+  sample_n(4000) %>% 
+  plot_ly(
+    x = ~order_hour_of_day, y = ~order_number, type = "box", colors = "viridis"
+  )
+  
+```
+
